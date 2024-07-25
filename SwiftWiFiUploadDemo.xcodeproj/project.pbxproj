@@ -11,6 +11,9 @@
 		8D6525722C46F2EF0075D18F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6525712C46F2EF0075D18F /* ContentView.swift */; };
 		8D6525742C46F2F00075D18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6525732C46F2F00075D18F /* Assets.xcassets */; };
 		8D6525782C46F2F00075D18F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6525772C46F2F00075D18F /* Preview Assets.xcassets */; };
+		8D65257F2C4705720075D18F /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65257E2C4705720075D18F /* ServerModel.swift */; };
+		8D65673C2C49E2AC00CDE565 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65673B2C49E2AC00CDE565 /* DataModel.swift */; };
+		8D65673E2C49E5B900CDE565 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65673D2C49E5B900CDE565 /* FileManagerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		8D6525732C46F2F00075D18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6525752C46F2F00075D18F /* SwiftWiFiUploadDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWiFiUploadDemo.entitlements; sourceTree = "<group>"; };
 		8D6525772C46F2F00075D18F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D65257E2C4705720075D18F /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		8D65673B2C49E2AC00CDE565 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8D65673D2C49E5B900CDE565 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				8D65256F2C46F2EF0075D18F /* SwiftWiFiUploadDemoApp.swift */,
 				8D6525712C46F2EF0075D18F /* ContentView.swift */,
+				8D65673D2C49E5B900CDE565 /* FileManagerService.swift */,
+				8D65673B2C49E2AC00CDE565 /* DataModel.swift */,
+				8D65257E2C4705720075D18F /* ServerModel.swift */,
 				8D6525732C46F2F00075D18F /* Assets.xcassets */,
 				8D6525752C46F2F00075D18F /* SwiftWiFiUploadDemo.entitlements */,
 				8D6525762C46F2F00075D18F /* Preview Content */,
@@ -139,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D65673E2C49E5B900CDE565 /* FileManagerService.swift in Sources */,
+				8D65257F2C4705720075D18F /* ServerModel.swift in Sources */,
+				8D65673C2C49E2AC00CDE565 /* DataModel.swift in Sources */,
 				8D6525722C46F2EF0075D18F /* ContentView.swift in Sources */,
 				8D6525702C46F2EF0075D18F /* SwiftWiFiUploadDemoApp.swift in Sources */,
 			);
@@ -284,7 +296,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -292,7 +304,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dovhiy.Developer.SwiftWiFiUploadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +335,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -330,7 +343,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dovhiy.Developer.SwiftWiFiUploadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

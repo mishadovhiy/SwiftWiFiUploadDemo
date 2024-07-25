@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct MessageContent {
+    let title:String
+    var description:String? = nil
+}
+
+struct ButtonContent {
+    let title:String
+    var pressed:(()->())? = nil
+}
