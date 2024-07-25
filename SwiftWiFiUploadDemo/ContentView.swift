@@ -13,13 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            if #available(iOS 15.0, *) {
-                image
-                    .foregroundStyle(.tint)
-            } else {
-                image
-            }
-            Text("Hello, world!")
             Spacer()
                 .frame(height: 10)
             Button((viewModel.serverModel.listener != nil ? "Stop" : "Start") + " server") {
